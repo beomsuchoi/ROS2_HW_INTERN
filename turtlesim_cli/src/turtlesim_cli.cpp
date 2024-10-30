@@ -58,7 +58,7 @@ public:
         } else if (c == '4') {
           mode = 4;
           std::cout << "Turtle type selection mode. Press Q to quit." << std::endl;
-          std::cout << "Select Turtle type: 1 for Classic, 2 for Speedy, 3 for Ninja, 4 for Elder." << std::endl;
+          std::cout << "Select Turtle type" << std::endl;
         }
       } else if (mode == 1) {
         switch (c) {
@@ -172,7 +172,7 @@ public:
             continue;
         }
         mode = 0;
-        std::cout << "OUT Turtle type selection mode. You can now select another mode." << std::endl;
+        std::cout << "OUT Turtle type selection mode." << std::endl;
       }
     }
   }
@@ -184,7 +184,7 @@ private:
 
   void changePenSettings(uint8_t r, uint8_t g, uint8_t b, uint8_t width) {
     if (!set_pen_client_->wait_for_service(std::chrono::seconds(1))) {
-      RCLCPP_WARN(this->get_logger(), "Waiting for set_pen service...");
+      RCLCPP_WARN(this->get_logger(), "Waiting set_pen ");
       return;
     }
 
