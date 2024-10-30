@@ -213,7 +213,7 @@ private:
 
   void spawnTurtle(float x, float y, float theta, const std::string &name) {
     if (!spawn_client_->wait_for_service(std::chrono::seconds(1))) {
-      RCLCPP_WARN(this->get_logger(), "Waiting for spawn service...");
+      RCLCPP_WARN(this->get_logger(), "Waiting spawn");
       return;
     }
 
