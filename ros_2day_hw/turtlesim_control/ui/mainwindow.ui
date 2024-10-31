@@ -161,7 +161,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>shape1</string>
+     <string>CIRCLE</string>
     </property>
    </widget>
    <widget class="QPushButton" name="shape2">
@@ -174,7 +174,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>shape2</string>
+     <string>TRIANGLE</string>
     </property>
    </widget>
    <widget class="QPushButton" name="shape3">
@@ -187,7 +187,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>shape3</string>
+     <string>SQUARE</string>
     </property>
    </widget>
    <widget class="QTextBrowser" name="text">
@@ -211,6 +211,22 @@
     </property>
     <property name="orientation">
      <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QSlider" name="size_shape">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>630</y>
+      <width>341</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>10</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
     </property>
    </widget>
   </widget>

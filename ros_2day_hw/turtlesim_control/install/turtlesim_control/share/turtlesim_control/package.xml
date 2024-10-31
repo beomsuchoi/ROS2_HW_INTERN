@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<package>
+  <name>turtlesim_control</name>
+  <version>0.1.0</version>
+  <description>
+    A package to control Turtlesim using Qt GUI and ROS2
+  </description>
+
+  <maintainer email="choibeomsu@example.com">Choi Beom Su</maintainer>
+  <author>Choi Beom Su</author>
+  <license>BSD</license>
+
+  <!-- 빌드 도구 의존성 -->
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <buildtool_depend>rosidl_default_generators</buildtool_depend>
+
+  <!-- 빌드 의존성 -->
+  <build_depend>rclcpp</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>Qt5</build_depend>
+  <build_depend>std_msgs</build_depend>
+
+  <!-- 실행 의존성 -->
+  <run_depend>rclcpp</run_depend>
+  <run_depend>geometry_msgs</run_depend>
+  <run_depend>Qt5</run_depend>
+  <run_depend>std_msgs</run_depend>
+
+  <!-- 테스트 의존성 -->
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

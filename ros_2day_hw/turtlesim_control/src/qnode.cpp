@@ -1,6 +1,7 @@
 #include "qnode.hpp"
 #include <QString>
 #include <turtlesim/srv/set_pen.hpp>
+#include <thread>
 
 QNode::QNode() {
   int argc = 0;
@@ -117,4 +118,49 @@ void QNode::PenWidth(int width) {
   } else {
     RCLCPP_WARN(node->get_logger(), "Service /turtle1/set_pen not available");
   }
+}
+
+void QNode::clearDrawing() {
+  if (clear_client->wait_for_service(std::chrono::seconds(1))) {
+    auto request = std::make_shared<std_srvs::srv::Empty::Request>();
+    clear_client->async_send_request(request);
+    rclcpp::sleep_for(std::chrono::milliseconds(500));  // 잠시 기다림
+  }
+}
+
+void QNode::drawCircle(double radius, double speed) {
+    std::thread([this, radius, speed]() {
+        double circumference = 2 * M_PI * radius;  // 원의 둘레 계산
+        double duration = circumference / speed;    // 전체 이동 시간
+        double travel_time = duration / 24;         // 24단계
+
+        for (int i = 0; i < 26; i++) {              // 26단계 반복
+            publishVelocity(speed, speed / radius); // 선속도와 각속도 설정
+            rclcpp::sleep_for(std::chrono::milliseconds(static_cast<int>(travel_time * 1000))); // 대기 시간
+        }
+        publishVelocity(0, 0); // 멈춤
+    }).detach(); // 스레드 분리
+}//원이 끝까지 그려지지 않는 문제로 인해 원은 스레드 분리해 완성. 상단에서 thread include
+
+
+void QNode::drawTriangle(int side_length) {
+  const double speed_factor = 0.1;  // 속도 계수
+  for (int i = 0; i < 3; ++i) {
+    publishVelocity(side_length * speed_factor, 0.0);  // 이동
+    rclcpp::sleep_for(std::chrono::seconds(2));  // 더 긴 시간 이동
+    publishVelocity(0, 2 * M_PI / 3);  // 120도 회전
+    rclcpp::sleep_for(std::chrono::milliseconds(1000));
+  }
+  publishVelocity(0, 0);  // 멈춤
+}
+
+void QNode::drawSquare(int side_length) {
+  const double speed_factor = 0.1;  // 속도 계수
+  for (int i = 0; i < 4; ++i) {
+    publishVelocity(side_length * speed_factor, 0.0);  // 이동
+    rclcpp::sleep_for(std::chrono::seconds(2));  // 더 긴 시간 이동
+    publishVelocity(0, M_PI / 2);  // 90도 회전
+    rclcpp::sleep_for(std::chrono::milliseconds(1000));
+  }
+  publishVelocity(0, 0);  // 멈춤
 }

@@ -33,10 +33,19 @@ private slots:
 
   void changeLineWidth(int width);
 
+  void drawCircle();     // 원 그리기 함수
+  void drawTriangle();   // 정삼각형 그리기 함수
+  void drawSquare();     // 정사각형 그리기 함수
+  void changeShapeSize(int size); // 슬라이더를 통한 크기 조정 함수
+
+
 private:
   Ui::MainWindowDesign* ui;
   QNode* qnode;
   void closeEvent(QCloseEvent* event);
+
+  int shape_size = 10;
+  
 };
 
 #endif  // MAIN_WINDOW_H

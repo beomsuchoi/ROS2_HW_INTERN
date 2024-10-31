@@ -1,0 +1,10 @@
+/home/choibeomsu/ros2_ws/src/turtlesim_control/build/turtlesim_control/CMakeFiles/uninstall.dir
+/home/choibeomsu/ros2_ws/src/turtlesim_control/build/turtlesim_control/CMakeFiles/turtlesim_control_uninstall.dir
+/home/choibeomsu/ros2_ws/src/turtlesim_control/build/turtlesim_control/CMakeFiles/turtlesim_control.dir
+/home/choibeomsu/ros2_ws/src/turtlesim_control/build/turtlesim_control/CMakeFiles/test.dir
+/home/choibeomsu/ros2_ws/src/turtlesim_control/build/turtlesim_control/CMakeFiles/edit_cache.dir
+/home/choibeomsu/ros2_ws/src/turtlesim_control/build/turtlesim_control/CMakeFiles/rebuild_cache.dir
+/home/choibeomsu/ros2_ws/src/turtlesim_control/build/turtlesim_control/CMakeFiles/list_install_components.dir
+/home/choibeomsu/ros2_ws/src/turtlesim_control/build/turtlesim_control/CMakeFiles/install.dir
+/home/choibeomsu/ros2_ws/src/turtlesim_control/build/turtlesim_control/CMakeFiles/install/local.dir
+/home/choibeomsu/ros2_ws/src/turtlesim_control/build/turtlesim_control/CMakeFiles/install/strip.dir

@@ -1,0 +1,78 @@
+[0.006s] Invoking command in '/home/choibeomsu/ros2_ws/src/turtlesim_control/build/turtlesim_control': CMAKE_PREFIX_PATH=/home/choibeomsu/colcon_ws/install/my_cpp_pkg:/opt/ros/humble:/home/choibeomsu/colcon_ws/install/bschoi /usr/bin/cmake /home/choibeomsu/ros2_ws/src/turtlesim_control -DCMAKE_INSTALL_PREFIX=/home/choibeomsu/ros2_ws/src/turtlesim_control/install/turtlesim_control
+[0.072s] -- The CXX compiler identification is GNU 11.4.0
+[0.079s] -- Detecting CXX compiler ABI info
+[0.166s] -- Detecting CXX compiler ABI info - done
+[0.175s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.175s] -- Detecting CXX compile features
+[0.175s] -- Detecting CXX compile features - done
+[0.177s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.300s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.359s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[0.383s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.385s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.390s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.397s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.407s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.432s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.433s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.523s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.559s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.594s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.601s] -- Looking for C++ include pthread.h
+[0.703s] -- Looking for C++ include pthread.h - found
+[0.703s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.803s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.804s] -- Found Threads: TRUE  
+[0.844s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.71.0") found components: thread 
+[0.852s] -- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.860s] -- Found std_srvs: 4.2.4 (/opt/ros/humble/share/std_srvs/cmake)
+[0.866s] -- Found turtlesim: 1.4.2 (/opt/ros/humble/share/turtlesim/cmake)
+[0.893s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.941s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.943s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.943s] -- Configured cppcheck include dirs: /home/choibeomsu/ros2_ws/src/turtlesim_control/include/turtlesim_control;/home/choibeomsu/ros2_ws/src/turtlesim_control/build/turtlesim_control
+[0.943s] -- Configured cppcheck exclude dirs and/or files: 
+[0.945s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.945s] -- Configured cpplint exclude dirs and/or files: 
+[0.946s] -- Added test 'lint_cmake' to check CMake code style
+[0.949s] -- Added test 'uncrustify' to check C / C++ code style
+[0.949s] -- Configured uncrustify additional arguments: 
+[0.949s] -- Added test 'xmllint' to check XML markup files
+[0.950s] -- Configuring done
+[0.962s] -- Generating done
+[0.963s] -- Build files have been written to: /home/choibeomsu/ros2_ws/src/turtlesim_control/build/turtlesim_control
+[0.969s] Invoked command in '/home/choibeomsu/ros2_ws/src/turtlesim_control/build/turtlesim_control' returned '0': CMAKE_PREFIX_PATH=/home/choibeomsu/colcon_ws/install/my_cpp_pkg:/opt/ros/humble:/home/choibeomsu/colcon_ws/install/bschoi /usr/bin/cmake /home/choibeomsu/ros2_ws/src/turtlesim_control -DCMAKE_INSTALL_PREFIX=/home/choibeomsu/ros2_ws/src/turtlesim_control/install/turtlesim_control
+[0.971s] Invoking command in '/home/choibeomsu/ros2_ws/src/turtlesim_control/build/turtlesim_control': CMAKE_PREFIX_PATH=/home/choibeomsu/colcon_ws/install/my_cpp_pkg:/opt/ros/humble:/home/choibeomsu/colcon_ws/install/bschoi /usr/bin/cmake --build /home/choibeomsu/ros2_ws/src/turtlesim_control/build/turtlesim_control -- -j32 -l32
+[1.015s] [  9%] [34m[1mGenerating include/turtlesim_control/moc_qnode.cpp[0m
+[1.015s] [ 27%] [34m[1mGenerating ui_mainwindow.h[0m
+[1.015s] [ 27%] [34m[1mGenerating include/turtlesim_control/moc_main_window.cpp[0m
+[1.015s] [ 36%] [34m[1mGenerating qrc_images.cpp[0m
+[1.048s] [ 45%] [32mBuilding CXX object CMakeFiles/turtlesim_control.dir/src/main.cpp.o[0m
+[1.048s] [ 63%] [32mBuilding CXX object CMakeFiles/turtlesim_control.dir/include/turtlesim_control/moc_main_window.cpp.o[0m
+[1.048s] [ 63%] [32mBuilding CXX object CMakeFiles/turtlesim_control.dir/src/main_window.cpp.o[0m
+[1.048s] [ 72%] [32mBuilding CXX object CMakeFiles/turtlesim_control.dir/src/qnode.cpp.o[0m
+[1.048s] [ 81%] [32mBuilding CXX object CMakeFiles/turtlesim_control.dir/include/turtlesim_control/moc_qnode.cpp.o[0m
+[1.048s] [ 90%] [32mBuilding CXX object CMakeFiles/turtlesim_control.dir/qrc_images.cpp.o[0m
+[4.723s] [100%] [32m[1mLinking CXX executable turtlesim_control[0m
+[5.269s] [100%] Built target turtlesim_control
+[5.279s] Invoked command in '/home/choibeomsu/ros2_ws/src/turtlesim_control/build/turtlesim_control' returned '0': CMAKE_PREFIX_PATH=/home/choibeomsu/colcon_ws/install/my_cpp_pkg:/opt/ros/humble:/home/choibeomsu/colcon_ws/install/bschoi /usr/bin/cmake --build /home/choibeomsu/ros2_ws/src/turtlesim_control/build/turtlesim_control -- -j32 -l32
+[5.337s] Invoking command in '/home/choibeomsu/ros2_ws/src/turtlesim_control/build/turtlesim_control': CMAKE_PREFIX_PATH=/home/choibeomsu/colcon_ws/install/my_cpp_pkg:/opt/ros/humble:/home/choibeomsu/colcon_ws/install/bschoi /usr/bin/cmake --install /home/choibeomsu/ros2_ws/src/turtlesim_control/build/turtlesim_control
+[5.346s] -- Install configuration: ""
+[5.346s] -- Installing: /home/choibeomsu/ros2_ws/src/turtlesim_control/install/turtlesim_control/lib/turtlesim_control/turtlesim_control
+[5.348s] -- Set runtime path of "/home/choibeomsu/ros2_ws/src/turtlesim_control/install/turtlesim_control/lib/turtlesim_control/turtlesim_control" to ""
+[5.349s] -- Installing: /home/choibeomsu/ros2_ws/src/turtlesim_control/install/turtlesim_control/share/ament_index/resource_index/package_run_dependencies/turtlesim_control
+[5.349s] -- Installing: /home/choibeomsu/ros2_ws/src/turtlesim_control/install/turtlesim_control/share/ament_index/resource_index/parent_prefix_path/turtlesim_control
+[5.349s] -- Installing: /home/choibeomsu/ros2_ws/src/turtlesim_control/install/turtlesim_control/share/turtlesim_control/environment/ament_prefix_path.sh
+[5.349s] -- Installing: /home/choibeomsu/ros2_ws/src/turtlesim_control/install/turtlesim_control/share/turtlesim_control/environment/ament_prefix_path.dsv
+[5.349s] -- Installing: /home/choibeomsu/ros2_ws/src/turtlesim_control/install/turtlesim_control/share/turtlesim_control/environment/path.sh
+[5.349s] -- Installing: /home/choibeomsu/ros2_ws/src/turtlesim_control/install/turtlesim_control/share/turtlesim_control/environment/path.dsv
+[5.350s] -- Installing: /home/choibeomsu/ros2_ws/src/turtlesim_control/install/turtlesim_control/share/turtlesim_control/local_setup.bash
+[5.350s] -- Installing: /home/choibeomsu/ros2_ws/src/turtlesim_control/install/turtlesim_control/share/turtlesim_control/local_setup.sh
+[5.350s] -- Installing: /home/choibeomsu/ros2_ws/src/turtlesim_control/install/turtlesim_control/share/turtlesim_control/local_setup.zsh
+[5.350s] -- Installing: /home/choibeomsu/ros2_ws/src/turtlesim_control/install/turtlesim_control/share/turtlesim_control/local_setup.dsv
+[5.350s] -- Installing: /home/choibeomsu/ros2_ws/src/turtlesim_control/install/turtlesim_control/share/turtlesim_control/package.dsv
+[5.350s] -- Installing: /home/choibeomsu/ros2_ws/src/turtlesim_control/install/turtlesim_control/share/ament_index/resource_index/packages/turtlesim_control
+[5.350s] -- Installing: /home/choibeomsu/ros2_ws/src/turtlesim_control/install/turtlesim_control/share/turtlesim_control/cmake/turtlesim_controlConfig.cmake
+[5.350s] -- Installing: /home/choibeomsu/ros2_ws/src/turtlesim_control/install/turtlesim_control/share/turtlesim_control/cmake/turtlesim_controlConfig-version.cmake
+[5.350s] -- Installing: /home/choibeomsu/ros2_ws/src/turtlesim_control/install/turtlesim_control/share/turtlesim_control/package.xml
+[5.352s] Invoked command in '/home/choibeomsu/ros2_ws/src/turtlesim_control/build/turtlesim_control' returned '0': CMAKE_PREFIX_PATH=/home/choibeomsu/colcon_ws/install/my_cpp_pkg:/opt/ros/humble:/home/choibeomsu/colcon_ws/install/bschoi /usr/bin/cmake --install /home/choibeomsu/ros2_ws/src/turtlesim_control/build/turtlesim_control

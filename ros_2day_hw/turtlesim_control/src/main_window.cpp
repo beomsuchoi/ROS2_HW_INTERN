@@ -23,6 +23,13 @@ MainWindow::MainWindow(QWidget* parent)
   connect(ui->width_line, &QSlider::valueChanged, this, &MainWindow::changeLineWidth);
 
   connect(qnode, &QNode::cmdVelPublished, this, &MainWindow::displayCmdVel); // GUI 출력
+
+  connect(ui->shape1, &QPushButton::clicked, this, &MainWindow::drawCircle);
+  connect(ui->shape2, &QPushButton::clicked, this, &MainWindow::drawTriangle);
+  connect(ui->shape3, &QPushButton::clicked, this, &MainWindow::drawSquare);
+
+  connect(ui->size_shape, &QSlider::valueChanged, this, &MainWindow::changeShapeSize);
+
 }
 
 MainWindow::~MainWindow() {
@@ -81,4 +88,25 @@ void MainWindow::lineColorBlue() {
 
 void MainWindow::displayCmdVel(QString data) {
   ui->text->append(data); // "text"에 데이터 추가
+}
+
+void MainWindow::drawCircle() {
+  int shape_size = ui->size_shape->value();  // QSlider에서 가져온 크기 값
+  double speed = 1;  // 원을 그릴 속도 설정
+
+  qnode->drawCircle(shape_size*0.2, speed);  // 현재 크기와 속도로 원 그리기
+}
+
+void MainWindow::drawTriangle() {
+  
+  qnode->drawTriangle(shape_size*3);  // 현재 크기로 정삼각형 그리기
+}
+
+void MainWindow::drawSquare() {
+  
+  qnode->drawSquare(shape_size*3);  // 현재 크기로 정사각형 그리기
+}
+
+void MainWindow::changeShapeSize(int size) {
+  shape_size = size;  // 슬라이더 값으로 크기 설정
 }

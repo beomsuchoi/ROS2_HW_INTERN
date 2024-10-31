@@ -18,6 +18,11 @@ public:
   void backgroundColor(int r, int g, int b); // 배경색 변경 메서드
   void lineColor(int r, int g, int b); // 선 색상을 변경하는 함수
   void PenWidth(int width);
+  void drawCircle(double radius, double speed);
+  void drawTriangle(int side_length);
+  void drawSquare(int side_length);
+  void clearDrawing();
+
 
 protected:
   void run();
