@@ -27,12 +27,12 @@ void TurtlesimCliNode::start_cli() {
 
         // 입력이 잘못되었을 경우 처리
         if (std::cin.fail()) {
-            std::cin.clear(); // 스트림 플래그 초기화
+            std::cin.clear();
             std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // 버퍼 비우기
             std::cout << "올바른 숫자를 입력해주세요.\n";
             continue;
         }
-
+        //모드 입력
         switch (mode) {
             case 1:
                 control_mode();
@@ -79,7 +79,7 @@ void TurtlesimCliNode::control_mode() {
         twist.angular.z = 0.0;
 
         // 잠시 대기 후 초기화된 메시지 발행
-        rclcpp::sleep_for(std::chrono::milliseconds(500));  // 50ms 대기
+        rclcpp::sleep_for(std::chrono::milliseconds(500));  // 500ms 대기
         control_publisher_->publish(twist);
     }
 }
@@ -116,7 +116,7 @@ void TurtlesimCliNode::set_background_color() {
 }
 
 void TurtlesimCliNode::set_turtle_shape() {
-    std::cout << "원하는 거북이 모양의 번호를 선택하세요:\n1: ardent\n2: bouncy\n3: crystal\n4: dashing\n5: eloquent\n6: foxy\n7: galactic\n8: humble\n9: rolling\n";
+    std::cout << "원하는 거북이 모양의 번호를 선택하세요:\n1: ardent 2: bouncy 3: crystal\n4: dashing 5: eloquent 6: foxy\n7: galactic 8: humble 9: rolling\n";
 
     int choice;
     std::cin >> choice;
