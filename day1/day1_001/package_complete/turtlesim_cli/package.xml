@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>turtlesim_cli</name>
+  <version>0.0.0</version>
+  <description>Package for controlling turtlesim via CLI commands</description>
+  <maintainer email="beomsoochoi11@gmail.com">choibeomsu</maintainer>
+  <license>Apache-2.0</license> <!-- Apache-2.0 라이센스 추가 -->
+
+  <!-- 의존성 추가 -->
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <depend>rclcpp</depend>  <!-- rclcpp 추가 -->
+  <depend>geometry_msgs</depend>  <!-- geometry_msgs 추가 -->
+  <depend>turtlesim</depend>  <!-- turtlesim 의존성 추가 -->
+  <depend>std_srvs</depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
+
