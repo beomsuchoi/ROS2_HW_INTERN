@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>parameter_set</name>
+  <version>0.1.0</version>
+  <description>description</description>
+  <maintainer email="beomsoochoi11@gmail.com">author</maintainer>
+  <author>author</author>
+  <license>BSD</license>
+
+  <!-- 빌드 도구 의존성 -->
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <!-- 런타임 의존성 추가 -->
+  <depend>rclcpp</depend>
+  <depend>sensor_msgs</depend>
+  <depend>cv_bridge</depend>
+  <depend>boost</depend>
+
+  <!-- 테스트 의존성 -->
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+  
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
