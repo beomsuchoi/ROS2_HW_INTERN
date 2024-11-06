@@ -1,0 +1,17 @@
+[0.011s] Invoking command in '/home/choibeomsu/ros2_ws/src/wall_follower/build/wall_follower': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/choibeomsu/ros2_ws/install/yolo_segmentation:/home/choibeomsu/ros2_ws/install/yolo_detection:/home/choibeomsu/ros2_ws/install/video_to_ros2_topic:/home/choibeomsu/ros2_ws/install/image_to_ros2_topic:/opt/ros/humble /usr/bin/cmake --build /home/choibeomsu/ros2_ws/src/wall_follower/build/wall_follower -- -j32 -l32
+[0.088s] [ 33%] [32mBuilding CXX object CMakeFiles/wall_follower_node.dir/src/main.cpp.o[0m
+[0.090s] [ 66%] [32mBuilding CXX object CMakeFiles/wall_follower_node.dir/src/wall_follower_node.cpp.o[0m
+[0.105s] [01m[K/home/choibeomsu/ros2_ws/src/wall_follower/src/wall_follower_node.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Kwall_follower/wall_follower_node.hpp: No such file or directory
+[0.106s]     1 | #include [01;31m[K"wall_follower/wall_follower_node.hpp"[m[K
+[0.106s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.106s] compilation terminated.
+[0.107s] gmake[2]: *** [CMakeFiles/wall_follower_node.dir/build.make:90: CMakeFiles/wall_follower_node.dir/src/wall_follower_node.cpp.o] Error 1
+[0.107s] gmake[2]: *** Waiting for unfinished jobs....
+[0.225s] [01m[K/home/choibeomsu/ros2_ws/src/wall_follower/src/main.cpp:2:10:[m[K [01;31m[Kfatal error: [m[Kwall_follower_node.hpp: No such file or directory
+[0.225s]     2 | #include [01;31m[K"wall_follower_node.hpp"[m[K  // wall_follower_node.cpp가 선언된 헤더 파일
+[0.225s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.225s] compilation terminated.
+[0.235s] gmake[2]: *** [CMakeFiles/wall_follower_node.dir/build.make:76: CMakeFiles/wall_follower_node.dir/src/main.cpp.o] Error 1
+[0.235s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/wall_follower_node.dir/all] Error 2
+[0.236s] gmake: *** [Makefile:146: all] Error 2
+[0.238s] Invoked command in '/home/choibeomsu/ros2_ws/src/wall_follower/build/wall_follower' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/choibeomsu/ros2_ws/install/yolo_segmentation:/home/choibeomsu/ros2_ws/install/yolo_detection:/home/choibeomsu/ros2_ws/install/video_to_ros2_topic:/home/choibeomsu/ros2_ws/install/image_to_ros2_topic:/opt/ros/humble /usr/bin/cmake --build /home/choibeomsu/ros2_ws/src/wall_follower/build/wall_follower -- -j32 -l32

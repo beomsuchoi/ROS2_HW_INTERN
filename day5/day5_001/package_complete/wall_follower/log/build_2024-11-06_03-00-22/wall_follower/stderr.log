@@ -1,0 +1,13 @@
+[01m[K/home/choibeomsu/ros2_ws/src/wall_follower/src/wall_follower_node.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Kwall_follower/wall_follower_node.hpp: No such file or directory
+    1 | #include [01;31m[K"wall_follower/wall_follower_node.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/wall_follower_node.dir/build.make:90: CMakeFiles/wall_follower_node.dir/src/wall_follower_node.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+[01m[K/home/choibeomsu/ros2_ws/src/wall_follower/src/main.cpp:2:10:[m[K [01;31m[Kfatal error: [m[Kwall_follower_node.hpp: No such file or directory
+    2 | #include [01;31m[K"wall_follower_node.hpp"[m[K  // wall_follower_node.cpp가 선언된 헤더 파일
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/wall_follower_node.dir/build.make:76: CMakeFiles/wall_follower_node.dir/src/main.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/wall_follower_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
